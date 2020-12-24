@@ -1,0 +1,29 @@
+/*
+Stylesheet for the Configuration form of the scrabble game.
+
+@author Lucas
+*/
+
+label {
+    font-size: 24px;
+}
+
+textField{
+    font-size: 14px;
+}
+
+radioButton{
+    font-size: 14px;
+}
+
+button{
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.mainTitle{
+    font-family: "SansSerif Italic";
+    font-size: 48px;
+    margin-top: 20px;
+}

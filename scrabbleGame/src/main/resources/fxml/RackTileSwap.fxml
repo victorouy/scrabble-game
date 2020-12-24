@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="243.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scrabblegame.scrabble_game.RackTileSwapController">
+   <content>
+      <BorderPane>
+         <top>
+            <HBox alignment="CENTER" prefHeight="90.0" prefWidth="410.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="playerTile0" fitHeight="50.0" fitWidth="50.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile1" fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile2" fitHeight="50.0" fitWidth="50.0" layoutX="210.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile3" fitHeight="50.0" fitWidth="50.0" layoutX="410.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile4" fitHeight="50.0" fitWidth="50.0" layoutX="610.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile5" fitHeight="50.0" fitWidth="50.0" layoutX="610.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerTile6" fitHeight="50.0" fitWidth="50.0" layoutX="810.0" layoutY="10.0" onDragDetected="#handleTileSwapDrag" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <HBox fx:id="dragInImages" alignment="CENTER" prefHeight="56.0" prefWidth="417.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="23.0" prefWidth="50.0" style="-fx-background-color: #dfdfe5;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_0" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #adadb2;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_1" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #dfdfe5;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_2" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #adadb2;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_3" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #dfdfe5;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_4" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #adadb2;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="swap_5" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox style="-fx-background-color: #dfdfe5;">
+                     <children>
+                        <ImageView fx:id="swap_6" fitHeight="50.0" fitWidth="50.0" onDragDropped="#handleTileSwapDropped" onDragOver="#handleTileSwapDragOver" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#saveSwaps" prefHeight="31.0" prefWidth="115.0" text="Confirm">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </content>
+</DialogPane>
